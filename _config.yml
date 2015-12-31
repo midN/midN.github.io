@@ -1,0 +1,10 @@
+name: "A-WTF"
+description: "Andres Ivanov's personal wesbite on .wtf domain."
+
+url: "http://andres.wtf"
+
+markdown: rdiscount
+permalink: pretty
+
+gems:
+  - jekyll-minifier
