@@ -1,4 +1,6 @@
 body {
+  position: relative;
+  padding-top: 150px;
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
   background: #dae3e7;
@@ -158,6 +160,16 @@ iframe {
   font-size: 20px;
   padding-top: 8px;
 }
+.header .nav-item {
+  margin-right: 20px;
+  margin-top: 60px;
+}
+.header a {
+  color: #54ba4e;
+}
+.header a:hover, a.active {
+  color: #30772c;
+}
 /* ======= Sections======= */
 .sections-wrapper {
   padding-top: 60px;
@@ -176,9 +188,22 @@ iframe {
   color: #545e69;
   font-size: 24px;
 }
+.section .response {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 24px;
+}
 .section .content .more-link .fa {
   margin-right: 5px;
   font-size: 14px;
+}
+.section:before {
+  display:block;
+  content: " ";
+  margin-top: -140px;
+  height: 150px;
+  visibility: hidden;
 }
 /* About Section */
 /* Latest Section */
@@ -503,7 +528,8 @@ iframe {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  .header {
+  .
+  header {
     text-align: center;
   }
   .header .profile-image {
@@ -521,6 +547,23 @@ iframe {
   .project-image {
     margin-bottom: 15px;
   }
+
+  .navbar-default {
+    padding: 20px;
+  }
+
+  .header .nav-item {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .section:before {
+    display:block;
+    content: " ";
+    margin-top: -140px;
+    height: 120px;
+    visibility: hidden;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -530,4 +573,32 @@ iframe {
   .container {
     width: 1360px;
   }
+}
+.divider-vertical {
+  height: 42px;
+  margin: 0 9px;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #FFF;
+  border-color: #778492;
+}
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #778492;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
+#info-response {
+    display:none;
+}
+#info-response.success {
+  background-color: #54ba4e;
 }

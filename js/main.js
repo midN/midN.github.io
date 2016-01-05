@@ -13,4 +13,26 @@ jQuery(document).ready(function($) {
 
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({ username: "midN", selector: "#ghfeed" });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop()>=10)
+         {$('#hideme').fadeOut();}
+        else
+         {$('#hideme').fadeIn();}
+     });
+
+    $("a.nav-link, a.navbar-brand").on('click', function(e) {
+      e.preventDefault();
+      return $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500), !1
+    });
+
+    $("#info-link").on('click', function(e) {
+      $("#info-response").html(
+        "<img class='img-fluid img-circle' src='images/doge.jpg'>\
+        <h2 class='response'>Such wow, much scroll</h2>"
+      ).addClass("success").fadeIn("fast");
+    });
+
 });
