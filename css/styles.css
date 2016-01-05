@@ -602,3 +602,6 @@ iframe {
 #info-response.success {
   background-color: #54ba4e;
 }
+#info-response .img-fluid {
+  margin: 0 auto;
+}

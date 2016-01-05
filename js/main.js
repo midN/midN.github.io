@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
       $("#info-response").html(
         "<img class='img-fluid img-circle' src='images/doge.jpg'>\
         <h2 class='response'>Such wow, much scroll</h2>"
-      ).addClass("success").fadeIn("fast");
+      ).addClass("success").fadeIn("fast").delay(3000).fadeOut("fast");
     });
 
 });
