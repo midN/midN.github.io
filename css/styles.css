@@ -79,6 +79,18 @@ a.btn-cta-secondary:hover,
   border: 1px solid #3893bd;
   color: #fff;
 }
+a.btn-cta-inbank,
+.btn-cta-inbank {
+  background: #862897;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.btn-cta-inbank:hover,
+.btn-cta-inbank:hover {
+  background: #A230B6;
+  color: #fff;
+}
 .text-highlight {
   color: #32383e;
 }
@@ -324,14 +336,7 @@ iframe {
   line-height: 1.5;
 }
 .experience .item .title .place {
-  color: #852796;
   font-weight: normal;
-}
-.experience .item .title .place a {
-  color: #852796;
-}
-.experience .item .title .place a:hover {
-  color: #852796;
 }
 .experience .item .title .year {
   color: #999999;
