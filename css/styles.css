@@ -210,6 +210,13 @@ iframe {
   margin-right: 5px;
   font-size: 14px;
 }
+.section .content .achievement-link .fa {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.achievement-link a,a:hover {
+  text-decoration: none;
+}
 .section:before {
   display:block;
   content: " ";
