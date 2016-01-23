@@ -569,6 +569,19 @@ iframe {
     margin-top: 0px;
   }
 
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .navbar-default .navbar-nav>.nav-item {
+    float: none;
+    margin-left: .1rem;
+  }
+
+  .navbar-default .navbar-nav {
+    float:none !important;
+  }
+
   .section:before {
     display:block;
     content: " ";

@@ -1,38 +1,43 @@
 jQuery(document).ready(function($) {
 
-    /*======= Skillset *=======*/
-    $('.level-bar-inner').css('width', '0');
-    $(window).on('load', function() {
-        $('.level-bar-inner').each(function() {
-            var itemWidth = $(this).data('level');
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-        });
+  /*======= Skillset *=======*/
+  $('.level-bar-inner').css('width', '0');
+  $(window).on('load', function() {
+    $('.level-bar-inner').each(function() {
+      var itemWidth = $(this).data('level');
+      $(this).animate({
+        width: itemWidth
+      }, 800);
     });
+  });
 
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "midN", selector: "#ghfeed" });
+  /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
+  GitHubActivity.feed({ username: "midN", selector: "#ghfeed" });
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop()>=10)
-         {$('#hideme').fadeOut();}
-        else
-         {$('#hideme').fadeIn();}
-     });
+  $(window).scroll(function() {
+    if ($(this).scrollTop()>=10)
+    {$('#hideme').fadeOut();}
+    else
+    {$('#hideme').fadeIn();}
+  });
 
-    $("a.nav-link, a.navbar-brand").on('click', function(e) {
-      e.preventDefault();
-      return $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-      }, 500), !1
-    });
+  $("a.nav-link, a.navbar-brand").on('click', function(e) {
+    e.preventDefault();
+    return $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500), !1
+  });
 
-    $("#info-link").on('click', function(e) {
-      $("#info-response").html(
+  $('#navcollapse1 li a').click(function() {
+    /* always close responsive nav after click */
+    $('.navbar-toggler:visible').click();
+  });
+
+  $("#info-link").on('click', function(e) {
+    $("#info-response").html(
         "<img class='img-fluid img-circle' src='images/doge.jpg'>\
         <h2 class='response'>Such wow, much scroll</h2>"
-      ).addClass("success").fadeIn("fast").delay(3000).fadeOut("fast");
-    });
+        ).addClass("success").fadeIn("fast").delay(3000).fadeOut("fast");
+  });
 
 });
