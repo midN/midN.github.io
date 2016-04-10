@@ -630,3 +630,12 @@ iframe {
 #info-response .img-fluid {
   margin: 0 auto;
 }
+
+#books button {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#books #book1 {
+  margin-bottom: 20px;
+}
