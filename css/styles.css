@@ -639,3 +639,7 @@ iframe {
 #books #book1 {
   margin-bottom: 20px;
 }
+
+body .popover {
+  max-width: 830px;
+}

@@ -40,4 +40,10 @@ jQuery(document).ready(function($) {
         ).addClass("success").fadeIn("fast").delay(3000).fadeOut("fast");
   });
 
+  $('#sa_assoc').popover({
+    html: true,
+    content: function () {
+      return '<img class="img-fluid" src="images/sa_associate.jpg" />';
+    }
+  });
 });
