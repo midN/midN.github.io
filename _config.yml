@@ -6,5 +6,7 @@ url: "http://andres.wtf"
 markdown: rdiscount
 permalink: pretty
 
-gems:
+exclude: [buildspec.yml, CNAME]
+
+plugins:
   - jekyll-minifier
