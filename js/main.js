@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
     {$('#hideme').fadeIn();}
   });
 
-  $("a.nav-link, a.navbar-brand").on('click', function(e) {
+  $("#nav-link, a.navbar-brand").on('click', function(e) {
     e.preventDefault();
     return $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
