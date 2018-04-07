@@ -91,6 +91,18 @@ a.btn-cta-inbank:hover,
   background: #A230B6;
   color: #fff;
 }
+a.btn-cta-wallester,
+.btn-cta-wallester {
+  background: #f4425f;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.btn-cta-wallester:hover,
+.btn-cta-wallester:hover {
+  background: #f4425f;
+  color: #fff;
+}
 .text-highlight {
   color: #32383e;
 }
